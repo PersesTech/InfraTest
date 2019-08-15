@@ -23,6 +23,14 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim GridBagConstraint1 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
+        Dim GridBagConstraint2 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
+        Dim GridBagConstraint3 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
+        Dim GridBagConstraint4 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
+        Dim GridBagConstraint5 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
+        Dim GridBagConstraint6 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
+        Dim GridBagConstraint7 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
+        Dim GridBagConstraint8 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
         Dim Appearance1 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance2 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance3 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
@@ -44,6 +52,9 @@ Partial Class Form1
         Dim UltraToolTipInfo1 As Infragistics.Win.UltraWinToolTip.UltraToolTipInfo = New Infragistics.Win.UltraWinToolTip.UltraToolTipInfo("MemberNum, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ExchangeID," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ExchangeSubscriberID," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SubscriberID, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CIN," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "PolicyNum," &
         "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ExchangePolicyNum," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WEBTransactionID," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CaseNumber," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FamilyID", Infragistics.Win.ToolTipImage.Info, "IDs Accepted:", Infragistics.Win.DefaultableBoolean.[True])
         Dim UltraTab1 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
+        Dim Appearance16 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance17 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance18 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance15 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraStatusPanel1 As Infragistics.Win.UltraWinStatusBar.UltraStatusPanel = New Infragistics.Win.UltraWinStatusBar.UltraStatusPanel()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
@@ -65,19 +76,16 @@ Partial Class Form1
         Dim ButtonTool13 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("BAINVESTIGATION")
         Dim ButtonTool15 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("New_Issue")
         Dim ControlContainerTool6 As Infragistics.Win.UltraWinToolbars.ControlContainerTool = New Infragistics.Win.UltraWinToolbars.ControlContainerTool("HideCancel")
-        Dim GridBagConstraint1 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
-        Dim GridBagConstraint2 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
-        Dim GridBagConstraint3 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
-        Dim GridBagConstraint4 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
-        Dim GridBagConstraint5 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
-        Dim GridBagConstraint6 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
-        Dim GridBagConstraint7 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
-        Dim GridBagConstraint8 As Infragistics.Win.Layout.GridBagConstraint = New Infragistics.Win.Layout.GridBagConstraint()
-        Dim Appearance16 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance17 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance18 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Me.UltraTabPageControl1 = New Infragistics.Win.UltraWinTabControl.UltraTabPageControl()
         Me.UltraGridBagLayoutPanel1 = New Infragistics.Win.Misc.UltraGridBagLayoutPanel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.chkHealthExchange = New Infragistics.Win.UltraWinEditors.UltraCheckEditor()
         Me.txtSelectedMemberID = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.txtSelectedxdID = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
@@ -117,10 +125,13 @@ Partial Class Form1
         Me.UltraTextEditor1 = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.UltraLabel3 = New Infragistics.Win.Misc.UltraLabel()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
+        Me.tvwSelect = New Infragistics.Win.UltraWinTree.UltraTree()
         Me.TabControl = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage1 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
+        Me.grdResult = New Infragistics.Win.UltraWinGrid.UltraGrid()
         Me.UltraToolTipManager1 = New Infragistics.Win.UltraWinToolTip.UltraToolTipManager(Me.components)
         Me.grbSearch = New Infragistics.Win.Misc.UltraGroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.UltraStatusBar1 = New Infragistics.Win.UltraWinStatusBar.UltraStatusBar()
         Me.imageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.UltraToolbarsManager1 = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
@@ -128,20 +139,17 @@ Partial Class Form1
         Me._frmFindMember_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me._frmFindMember_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me._frmFindMember_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me.tvwSelect = New Infragistics.Win.UltraWinTree.UltraTree()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.grdResult = New Infragistics.Win.UltraWinGrid.UltraGrid()
         Me.UltraTabPageControl1.SuspendLayout()
         CType(Me.UltraGridBagLayoutPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UltraGridBagLayoutPanel1.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.chkHealthExchange, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtSelectedMemberID, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtSelectedxdID, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -186,23 +194,15 @@ Partial Class Form1
         Me.SplitContainer3.Panel1.SuspendLayout()
         Me.SplitContainer3.Panel2.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
+        CType(Me.tvwSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabControl, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl.SuspendLayout()
+        CType(Me.grdResult, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.grbSearch, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grbSearch.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UltraStatusBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UltraToolbarsManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tvwSelect, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.grdResult, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UltraTabPageControl1
@@ -232,6 +232,125 @@ Partial Class Form1
         Me.UltraGridBagLayoutPanel1.Name = "UltraGridBagLayoutPanel1"
         Me.UltraGridBagLayoutPanel1.Size = New System.Drawing.Size(832, 370)
         Me.UltraGridBagLayoutPanel1.TabIndex = 1
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        GridBagConstraint1.Fill = Infragistics.Win.Layout.FillType.Both
+        GridBagConstraint1.OriginX = 6
+        GridBagConstraint1.OriginY = 5
+        GridBagConstraint1.SpanX = 2
+        GridBagConstraint1.SpanY = 4
+        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox9, GridBagConstraint1)
+        Me.PictureBox9.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
+        Me.PictureBox9.Location = New System.Drawing.Point(666, 286)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox9, New System.Drawing.Size(100, 48))
+        Me.PictureBox9.Size = New System.Drawing.Size(100, 48)
+        Me.PictureBox9.TabIndex = 7
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox8
+        '
+        GridBagConstraint2.Fill = Infragistics.Win.Layout.FillType.Both
+        GridBagConstraint2.OriginX = 0
+        GridBagConstraint2.OriginY = 3
+        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox8, GridBagConstraint2)
+        Me.PictureBox8.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
+        Me.PictureBox8.Location = New System.Drawing.Point(66, 186)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox8, New System.Drawing.Size(100, 50))
+        Me.PictureBox8.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox8.TabIndex = 6
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox7
+        '
+        GridBagConstraint3.Fill = Infragistics.Win.Layout.FillType.Both
+        GridBagConstraint3.OriginX = 5
+        GridBagConstraint3.OriginY = 4
+        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox7, GridBagConstraint3)
+        Me.PictureBox7.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
+        Me.PictureBox7.Location = New System.Drawing.Point(566, 236)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox7, New System.Drawing.Size(100, 50))
+        Me.PictureBox7.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 5
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        GridBagConstraint4.Fill = Infragistics.Win.Layout.FillType.Both
+        GridBagConstraint4.OriginX = 4
+        GridBagConstraint4.OriginY = 3
+        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox6, GridBagConstraint4)
+        Me.PictureBox6.Image = Global.InfragisticsTest.My.Resources.Resources.images
+        Me.PictureBox6.Location = New System.Drawing.Point(466, 186)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox6, New System.Drawing.Size(100, 50))
+        Me.PictureBox6.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 4
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        GridBagConstraint5.Fill = Infragistics.Win.Layout.FillType.Both
+        GridBagConstraint5.OriginX = 3
+        GridBagConstraint5.OriginY = 2
+        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox5, GridBagConstraint5)
+        Me.PictureBox5.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
+        Me.PictureBox5.Location = New System.Drawing.Point(366, 136)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox5, New System.Drawing.Size(100, 50))
+        Me.PictureBox5.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 3
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        GridBagConstraint6.Fill = Infragistics.Win.Layout.FillType.Both
+        GridBagConstraint6.OriginX = 1
+        GridBagConstraint6.OriginY = 2
+        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox4, GridBagConstraint6)
+        Me.PictureBox4.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
+        Me.PictureBox4.Location = New System.Drawing.Point(166, 136)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox4, New System.Drawing.Size(100, 50))
+        Me.PictureBox4.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox4.TabIndex = 2
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        GridBagConstraint7.Fill = Infragistics.Win.Layout.FillType.Both
+        GridBagConstraint7.OriginX = 2
+        GridBagConstraint7.OriginY = 1
+        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox3, GridBagConstraint7)
+        Me.PictureBox3.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
+        Me.PictureBox3.Location = New System.Drawing.Point(266, 86)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox3, New System.Drawing.Size(100, 50))
+        Me.PictureBox3.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox3.TabIndex = 1
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        GridBagConstraint8.Fill = Infragistics.Win.Layout.FillType.Both
+        GridBagConstraint8.OriginX = 1
+        GridBagConstraint8.OriginY = 0
+        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox2, GridBagConstraint8)
+        Me.PictureBox2.Image = Global.InfragisticsTest.My.Resources.Resources.ts
+        Me.PictureBox2.Location = New System.Drawing.Point(166, 36)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox2, New System.Drawing.Size(100, 50))
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
         '
         'chkHealthExchange
         '
@@ -767,6 +886,14 @@ Partial Class Form1
         Me.SplitContainer3.TabStop = False
         Me.SplitContainer3.Tag = "SAVE"
         '
+        'tvwSelect
+        '
+        Me.tvwSelect.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tvwSelect.Location = New System.Drawing.Point(0, 0)
+        Me.tvwSelect.Name = "tvwSelect"
+        Me.tvwSelect.Size = New System.Drawing.Size(242, 417)
+        Me.tvwSelect.TabIndex = 0
+        '
         'TabControl
         '
         Me.TabControl.Controls.Add(Me.UltraTabSharedControlsPage1)
@@ -790,6 +917,30 @@ Partial Class Form1
         Me.UltraTabSharedControlsPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.UltraTabSharedControlsPage1.Name = "UltraTabSharedControlsPage1"
         Me.UltraTabSharedControlsPage1.Size = New System.Drawing.Size(965, 390)
+        '
+        'grdResult
+        '
+        Appearance16.BackColor = System.Drawing.Color.White
+        Me.grdResult.DisplayLayout.Appearance = Appearance16
+        Appearance17.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Appearance17.BackColor2 = System.Drawing.Color.Gray
+        Appearance17.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
+        Appearance17.BackHatchStyle = Infragistics.Win.BackHatchStyle.Horizontal
+        Me.grdResult.DisplayLayout.GroupByBox.Appearance = Appearance17
+        Me.grdResult.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[True]
+        Appearance18.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Appearance18.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
+        Me.grdResult.DisplayLayout.Override.RowAlternateAppearance = Appearance18
+        Me.grdResult.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy
+        Me.grdResult.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdResult.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grdResult.Location = New System.Drawing.Point(0, 0)
+        Me.grdResult.Margin = New System.Windows.Forms.Padding(4)
+        Me.grdResult.Name = "grdResult"
+        Me.grdResult.Size = New System.Drawing.Size(1493, 162)
+        Me.grdResult.TabIndex = 11
+        Me.grdResult.TabStop = False
+        Me.grdResult.Text = "No Search"
         '
         'UltraToolTipManager1
         '
@@ -820,6 +971,18 @@ Partial Class Form1
         Me.grbSearch.Name = "grbSearch"
         Me.grbSearch.Size = New System.Drawing.Size(1493, 100)
         Me.grbSearch.TabIndex = 76
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
+        Me.PictureBox1.Location = New System.Drawing.Point(19, -2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(365, 85)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 48
+        Me.PictureBox1.TabStop = False
         '
         'UltraStatusBar1
         '
@@ -963,165 +1126,6 @@ Partial Class Form1
         Me._frmFindMember_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(8, 684)
         Me._frmFindMember_Toolbars_Dock_Area_Right.ToolbarsManager = Me.UltraToolbarsManager1
         '
-        'tvwSelect
-        '
-        Me.tvwSelect.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tvwSelect.Location = New System.Drawing.Point(0, 0)
-        Me.tvwSelect.Name = "tvwSelect"
-        Me.tvwSelect.Size = New System.Drawing.Size(242, 417)
-        Me.tvwSelect.TabIndex = 0
-        '
-        'PictureBox9
-        '
-        GridBagConstraint1.Fill = Infragistics.Win.Layout.FillType.Both
-        GridBagConstraint1.OriginX = 6
-        GridBagConstraint1.OriginY = 5
-        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox9, GridBagConstraint1)
-        Me.PictureBox9.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
-        Me.PictureBox9.Location = New System.Drawing.Point(666, 286)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox9, New System.Drawing.Size(100, 48))
-        Me.PictureBox9.Size = New System.Drawing.Size(100, 48)
-        Me.PictureBox9.TabIndex = 7
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox8
-        '
-        GridBagConstraint2.Fill = Infragistics.Win.Layout.FillType.Both
-        GridBagConstraint2.OriginX = 0
-        GridBagConstraint2.OriginY = 3
-        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox8, GridBagConstraint2)
-        Me.PictureBox8.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
-        Me.PictureBox8.Location = New System.Drawing.Point(66, 186)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox8, New System.Drawing.Size(100, 50))
-        Me.PictureBox8.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox8.TabIndex = 6
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox7
-        '
-        GridBagConstraint3.Fill = Infragistics.Win.Layout.FillType.Both
-        GridBagConstraint3.OriginX = 5
-        GridBagConstraint3.OriginY = 4
-        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox7, GridBagConstraint3)
-        Me.PictureBox7.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
-        Me.PictureBox7.Location = New System.Drawing.Point(566, 236)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox7, New System.Drawing.Size(100, 50))
-        Me.PictureBox7.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox7.TabIndex = 5
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox6
-        '
-        GridBagConstraint4.Fill = Infragistics.Win.Layout.FillType.Both
-        GridBagConstraint4.OriginX = 4
-        GridBagConstraint4.OriginY = 3
-        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox6, GridBagConstraint4)
-        Me.PictureBox6.Image = Global.InfragisticsTest.My.Resources.Resources.images
-        Me.PictureBox6.Location = New System.Drawing.Point(466, 186)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox6, New System.Drawing.Size(100, 50))
-        Me.PictureBox6.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 4
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        GridBagConstraint5.Fill = Infragistics.Win.Layout.FillType.Both
-        GridBagConstraint5.OriginX = 3
-        GridBagConstraint5.OriginY = 2
-        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox5, GridBagConstraint5)
-        Me.PictureBox5.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
-        Me.PictureBox5.Location = New System.Drawing.Point(366, 136)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox5, New System.Drawing.Size(100, 50))
-        Me.PictureBox5.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 3
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox4
-        '
-        GridBagConstraint6.Fill = Infragistics.Win.Layout.FillType.Both
-        GridBagConstraint6.OriginX = 1
-        GridBagConstraint6.OriginY = 2
-        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox4, GridBagConstraint6)
-        Me.PictureBox4.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
-        Me.PictureBox4.Location = New System.Drawing.Point(166, 136)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox4, New System.Drawing.Size(100, 50))
-        Me.PictureBox4.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox4.TabIndex = 2
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        GridBagConstraint7.Fill = Infragistics.Win.Layout.FillType.Both
-        GridBagConstraint7.OriginX = 2
-        GridBagConstraint7.OriginY = 1
-        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox3, GridBagConstraint7)
-        Me.PictureBox3.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
-        Me.PictureBox3.Location = New System.Drawing.Point(266, 86)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox3, New System.Drawing.Size(100, 50))
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox3.TabIndex = 1
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        GridBagConstraint8.Fill = Infragistics.Win.Layout.FillType.Both
-        GridBagConstraint8.OriginX = 1
-        GridBagConstraint8.OriginY = 0
-        Me.UltraGridBagLayoutPanel1.SetGridBagConstraint(Me.PictureBox2, GridBagConstraint8)
-        Me.PictureBox2.Image = Global.InfragisticsTest.My.Resources.Resources.ts
-        Me.PictureBox2.Location = New System.Drawing.Point(166, 36)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.UltraGridBagLayoutPanel1.SetPreferredSize(Me.PictureBox2, New System.Drawing.Size(100, 50))
-        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.InfragisticsTest.My.Resources.Resources.android_chrome_512x512
-        Me.PictureBox1.Location = New System.Drawing.Point(19, -2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(365, 85)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 48
-        Me.PictureBox1.TabStop = False
-        '
-        'grdResult
-        '
-        Appearance16.BackColor = System.Drawing.Color.White
-        Me.grdResult.DisplayLayout.Appearance = Appearance16
-        Appearance17.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Appearance17.BackColor2 = System.Drawing.Color.Gray
-        Appearance17.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        Appearance17.BackHatchStyle = Infragistics.Win.BackHatchStyle.Horizontal
-        Me.grdResult.DisplayLayout.GroupByBox.Appearance = Appearance17
-        Me.grdResult.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.[True]
-        Appearance18.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Appearance18.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        Me.grdResult.DisplayLayout.Override.RowAlternateAppearance = Appearance18
-        Me.grdResult.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy
-        Me.grdResult.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.grdResult.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grdResult.Location = New System.Drawing.Point(0, 0)
-        Me.grdResult.Margin = New System.Windows.Forms.Padding(4)
-        Me.grdResult.Name = "grdResult"
-        Me.grdResult.Size = New System.Drawing.Size(1493, 162)
-        Me.grdResult.TabIndex = 11
-        Me.grdResult.TabStop = False
-        Me.grdResult.Text = "No Search"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1140,6 +1144,14 @@ Partial Class Form1
         Me.UltraTabPageControl1.ResumeLayout(False)
         CType(Me.UltraGridBagLayoutPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UltraGridBagLayoutPanel1.ResumeLayout(False)
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.chkHealthExchange, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtSelectedMemberID, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtSelectedxdID, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1189,24 +1201,16 @@ Partial Class Form1
         Me.SplitContainer3.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer3.ResumeLayout(False)
+        CType(Me.tvwSelect, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabControl, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl.ResumeLayout(False)
+        CType(Me.grdResult, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.grbSearch, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grbSearch.ResumeLayout(False)
         Me.grbSearch.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UltraStatusBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UltraToolbarsManager1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tvwSelect, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.grdResult, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
